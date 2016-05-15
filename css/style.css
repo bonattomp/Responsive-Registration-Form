@@ -1,0 +1,58 @@
+/* Default CSS */
+
+body {
+     background-color:#F5F4F0;
+     margin:auto;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+.tituloBox {
+    color: #ffffff;
+    font: bold 0.8em trebuchet,arial,sans-serif;
+    padding: 2%;
+}
+
+.textoBox {
+    color: black;
+    font: 0.75em trebuchet ms, arial, serif;
+}
+
+footer {
+    background-color:#4F6525;
+    clear:both;
+    margin-top: 40px;
+}
+.textoFooter{
+    color: #ffffff;
+    font: 0.9em trebuchet,arial,sans-serif;
+    padding: 2%;         
+ }
+
+@media (max-width:480px) {
+	.textoFooter{
+		padding: 1%;         
+	}
+
+	footer a {
+		display:block;
+	}
+}
+
+a.textoFooter:link{
+    text-decoration:none;         
+ }
+a.textoFooter:visited {
+    text-decoration:none;
+  }
+a.textoFooter:hover {
+    text-decoration:underline;
+ }
+footer p.pull-left{
+	float:left;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
