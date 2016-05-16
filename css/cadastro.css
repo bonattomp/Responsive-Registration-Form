@@ -1,15 +1,14 @@
-#topo {
-	background-color: #4F6525;
-	background-repeat: repeat-x;
-	vertical-align: middle;
+#navbar {
+	background-image: linear-gradient(to bottom, #5cb85c 0px, #419641 100%);
+    background-repeat: repeat-x;
+    border-color: #3e8f3e;
 	position: fixed;
+	top: 0;
+	width: 100%;
 	z-index: 100000;
 }
 #logo {
 	float: left;
-}
-.span6.logoK > img {
-	margin: 1.5% 0% 1.5% 5%;
 }
 
 #mountain {
@@ -20,7 +19,7 @@ div.top > img {
 	margin: 1.5% 2%;
 }
 div.top {
-	background-color: #4F6525;
+	background-color: #3e8f3e;;
 	padding: 0%;
 	border: 1px solid #4F6525;
 }

@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Kamon! Cadastro</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Bootstrap -->
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/cadastro.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/spinner.css">
-
-<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
-
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script src="js/cadastro.js"></script>
-<!--[if IE]>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ <![endif]-->
+ <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+ <![endif]-->
+
+    <title>NEW Kamon! Cadastro</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/spinner.css">
+
+    <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/cadastro.js"></script>
+
 </head>
 <body>
-	<div id="topo" class="row-fluid">
-		<div class="span6 logoK">
-			<img id="logo" src="img/logo_avatar.png" alt="" />
+	<div id="navbar" class="container-fluid nav-bar-fix-top" >
+		<div id="logo" class="col-md-6" > 
+			<img class="img-responsive" class="img-responsive" src="img/logo_avatar.png" alt="" />
 		</div>
-		<div class="span6">
-			<img id="mountain" class="hidden-phone" src="img/dedo_de_deus.png" alt="mountain" />
+		<div class="col-md-6" >
+			<img id="mountain" class="hidden-phone" src="img/dedo_de_deus.png" alt="mountain" /> 
 		</div>
 	</div>
-	<div class="row-fluid">
-		<div class="span12"></div>
+ 
+	<!-- <div id="topo" class="col-lg-12" style="background-color: red;">
+		<div class="col-md-3 logoK">
+			<img id="-logo" src="img/logo_avatar.png" alt="" />
+		</div>
+		<div class="col-md-6">
+			<img id="-mountain" class="hidden-phone" src="img/dedo_de_deus.png" alt="mountain" />
+		</div>
 	</div>
-	<div id="mainSection" class="row-fluid">
-		<div id="leftColumn" class="span4 offset2">
+
+ -->
+
+
+	<div id="mainSection" class="container-fluid">
+		<div id="leftColumn" class="col-md-6 col-sm-12">
 			<div id="basicInfo" class="boxes">
 				<div class="top ">
 					<img src="img/informacoes_basicas.png" alt="icon" />
@@ -40,16 +60,16 @@
 				</div>
 				<div class="bottom">
 					<ul class="align-right">
-					<li>
-						<label class="textoBox">Nome:</label>
-						<input type="text" name="nome">
-					</li>
+						<li>
+							<label class="textoBox">Nome:</label>
+							<input type="text" name="nome">
+						</li>
 					</ul>
 					<ul class="align-right">
-					<li>
-						<label class="textoBox">Descrição:</label>
-						<textarea name="descricao"></textarea>
-					</li>
+						<li>
+							<label class="textoBox">Descrição:</label>
+							<textarea name="descricao"></textarea>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -61,50 +81,50 @@
 				<div class="bottom">
 					<ul class="textoBox">
 						<li>
-						<label class="labelGraduacao labels">Grau geral da via</label>
-						<input class="grau" type="range" id="grauGeral" name="grauGeral" min="0"
+							<label class="labelGraduacao labels">Grau geral da via</label>
+							<input class="grau" type="range" id="grauGeral" name="grauGeral" min="0"
 							value="0" max="11">
-						<label id="grauGeralValue"></label>
+							<label id="grauGeralValue"></label>
 						</li>
 					</ul>
 					<ul class="textoBox">
 						<li>
-						<label class="labelGraduacao labels">Grau do crux </label>
-						<input class="grau" type="range" id="grauCrux" name="grauCrux" min="0"
+							<label class="labelGraduacao labels">Grau do crux </label>
+							<input class="grau" type="range" id="grauCrux" name="grauCrux" min="0"
 							value="0" max="27">
-						<label id="grauCruxValue"></label>
+							<label id="grauCruxValue"></label>
 						</li>
 					</ul>
 					<ul class="textoBox">
 						<li>
-						<label class="labelGraduacao labels">Grau do artificial</label>
-						<input class="grau" type="range" id="grauArtificial" name="grauArtificial"
+							<label class="labelGraduacao labels">Grau do artificial</label>
+							<input class="grau" type="range" id="grauArtificial" name="grauArtificial"
 							min="0" value="0" max="10">
-						<label id="grauArtificialValue"></label>
+							<label id="grauArtificialValue"></label>
 						</li>
 					</ul>
 					<ul class="textoBox">
 						<li>
-						<label class="labelGraduacao labels">Artificial em Livre</label>
-						<input class="grau" type="range" id="grauArtificialLivre"
+							<label class="labelGraduacao labels">Artificial em Livre</label>
+							<input class="grau" type="range" id="grauArtificialLivre"
 							name="grauArtificialLivre" min="0" value="0" max="27">
-						<label id="grauArtificialLivreValue"></label>
+							<label id="grauArtificialLivreValue"></label>
 						</li>
 					</ul>
 					<ul class="textoBox">
 						<li>
-						<label class="labelGraduacao labels">Grau de exposição</label>
-						<input type="range" id="grauExposicao" name="grauExposicao"
+							<label class="labelGraduacao labels">Grau de exposição</label>
+							<input type="range" id="grauExposicao" name="grauExposicao"
 							min="0" value="0" max="8">
-						<label id="grauExposicaoValue"></label></span>
+							<label id="grauExposicaoValue"></label></span>
 						</li>
 					</ul>
 					<ul class="textoBox">
 						<li>
-						<label class="labelGraduacao labels">Grau de duração</label>
-						<input type="range" id="grauDuracao" name="grauDuracao" min="0"
+							<label class="labelGraduacao labels">Grau de duração</label>
+							<input type="range" id="grauDuracao" name="grauDuracao" min="0"
 							value="0" max="27">
-						<label id="grauDuracaoValue"></label>
+							<label id="grauDuracaoValue"></label>
 						</li>
 					</ul>
 
@@ -125,82 +145,84 @@
 				<div class="bottom">
 					<ul id="extensao">
 						<li>
-						<p class="textoBox labels">Extensão:</p>
-						<input class="spinner" type="text" /> <span class="textoBox">metros</span> 
+							<p class="textoBox labels">Extensão:</p>
+							<input class="spinner" type="text" /> <span class="textoBox">metros</span> 
 						</li>
 					</ul>
 					<div id="coodBase">
 						<p class="textoBase">Coordenadas da Base</p>
 						<ul>
-						<li>
-							<p class="textoBox labels">Latitude:</p>
-							<input id="latitude" type="text" name="" />
-						</li>
+							<li>
+								<p class="textoBox labels">Latitude:</p>
+								<input id="latitude" type="text" name="" />
+							</li>
 						</ul>
 						<ul>
-						<li>
-							<p class="textoBox labels">Longetude:</p>
-							<input id="longitude" type="text" name="" />
-						</li>
+							<li>
+								<p class="textoBox labels">Longetude:</p>
+								<input id="longitude" type="text" name="" />
+							</li>
 						</ul>
 						<ul>
-						<li>
-							<p class="textoBox labels">Altitude:</p>
-							<input class="spinner" type="text" /><span class="textoBox">metros</span>
-						</li>
+							<li>
+								<p class="textoBox labels">Altitude:</p>
+								<input class="spinner" type="text" /><span class="textoBox">metros</span>
+							</li>
 						</ul>
 					</div>
 
 					<ul>
 						<li>
-						<p class="textoBox labels">Cidade:</p>
-						<input id="cidade" type="text" name="nome" />
+							<p class="textoBox labels">Cidade:</p>
+							<input id="cidade" type="text" name="nome" />
 						</li>
 					</ul>
 					<ul>
 						<li>
-						<p class="textoBox labels">Montanha:</p>
-						<input type="text" name="" />
+							<p class="textoBox labels">Montanha:</p>
+							<input type="text" name="" />
 						</li>
 					</ul>
 					<ul>
 						<li>
-						<p class="textoBox labels">Face:</p>
-						<input id="faceMontanha" type="text" name="" />
+							<p class="textoBox labels">Face:</p>
+							<input id="faceMontanha" type="text" name="" />
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<div id="rightColumn" class="span4">
+
+
+		<div id="rightColumn" class="col-md-6 col-sm-12">
 			<div id="matSuggest" class="boxes">
 				<div class="top">
 					<img src="img/material_sugerido.png" alt="icon" />
 					<p class="tituloBox">Material Sugerido</p>
 				</div>
 				<div class="bottom">
-				
-				<!-- THE DIV BELOW IS A TEMPLATE FOR ADDING NEW FIELDS TO THE SCREEN -->
+
+					<!-- THE DIV BELOW IS A TEMPLATE FOR ADDING NEW FIELDS TO THE SCREEN -->
 					<div id="materialSugeridoTemplate" style='display: none;'>
 						<ul id="materialSugeridoQuantidade">
-						<li>
-							<p class="textoBox labels">Quantidade:</p>
-							<input class="spinner" type="text" />
-							<p class="textoBox labels">Nome:</p>
-							<input type="text" name="nome" id="materialSugeridoNome" />
-						</li>
+							<li>
+								<p class="textoBox labels">Quantidade:</p>
+								<input class="spinner" type="text" />
+								<p class="textoBox labels">Nome:</p>
+								<input type="text" name="nome" id="materialSugeridoNome" />
+							</li>
 						</ul>
 					</div>
-				<!-- THE ABOVE DIV IS A TEMPLATE FOR ADDING NEW FIELDS TO THE SCREEN -->
+					<!-- THE ABOVE DIV IS A TEMPLATE FOR ADDING NEW FIELDS TO THE SCREEN -->
 
 					<div id="materialSugeridoFields">
 						<ul id="materialSugeridoQuantidade">
-						<li>
-							<p class="textoBox labels">Quantidade:</p>
-							<input class="spinner" type="text" />
-							<p class="textoBox labels">Nome:</p>
-							<input type="text" name="nome" id="materialSugeridoNome" />
-						</li>
+							<li>
+								<p class="textoBox labels">Quantidade:</p>
+								<input class="spinner" type="text" />
+								<p class="textoBox labels">Nome:</p>
+								<input type="text" name="nome" id="materialSugeridoNome" />
+							</li>
 						</ul>
 					</div>
 					<div class="materialButton">
@@ -260,7 +282,7 @@
 					<ul class="tecAscensaoUl textoBox">
 						<li>
 							<input type="checkbox" name="entalamento"
-								class="tecAscensaoCheckbox" /> Entalamento
+							class="tecAscensaoCheckbox" /> Entalamento
 							<input type="radio" name="predominante" value="">
 						</li>
 					</ul>
@@ -281,7 +303,7 @@
 					<ul class="tecAscensaoUl textoBox">
 						<li>
 							<input type="checkbox" name="aderencia"
-								class="tecAscensaoCheckbox" /> Aderência
+							class="tecAscensaoCheckbox" /> Aderência
 							<input type="radio" name="predominante" value="">
 						</li>
 					</ul>
@@ -313,12 +335,12 @@
 		<div class="align-right">
 			<a href="#" class="textoFooter">Home</a><span class="hidden-phone">|</span>
 			<a href="#" class="textoFooter">Quem Somos</a><span
-				class="hidden-phone">|</span> <a href="#" class="textoFooter">Cadastro</a><span
-				class="hidden-phone">|</span> <a href="#" class="textoFooter">Pesquisar</a>
+			class="hidden-phone">|</span> <a href="#" class="textoFooter">Cadastro</a><span
+			class="hidden-phone">|</span> <a href="#" class="textoFooter">Pesquisar</a>
 		</div>
 	</footer>
-<div id="dialogSuccess" >Dados salvos com sucesso!</div>
-<div id="dialogFail" >Problema ao salvar!</div>
+	<div id="dialogSuccess" >Dados salvos com sucesso!</div>
+	<div id="dialogFail" >Problema ao salvar!</div>
 </body>
 
 
